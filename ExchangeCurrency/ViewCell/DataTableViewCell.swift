@@ -10,6 +10,8 @@ import UIKit
 
 class DataTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameCurrency: UILabel!
+    @IBOutlet weak var rateCurrency: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,8 +19,6 @@ class DataTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
