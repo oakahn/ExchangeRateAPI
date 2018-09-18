@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		15DD4D258D4C42496500C0AD /* Pods_ExchangeCurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78F5510DC439109242A2F27 /* Pods_ExchangeCurrency.framework */; };
 		9C0C7482206E1E4B0022D383 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0C7481206E1E4B0022D383 /* DataTableViewCell.swift */; };
+		9C7242492150A09500C89C8A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7242482150A09500C89C8A /* NotificationCenter.framework */; };
+		9C72424C2150A09500C89C8A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72424B2150A09500C89C8A /* TodayViewController.swift */; };
+		9C72424F2150A09500C89C8A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C72424D2150A09500C89C8A /* MainInterface.storyboard */; };
+		9C7242532150A09500C89C8A /* ExtensionToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C7242472150A09500C89C8A /* ExtensionToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9C72425D2150B01A00C89C8A /* Page2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C72425C2150B01A00C89C8A /* Page2.storyboard */; };
+		9C72425F2150B03500C89C8A /* Page2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72425E2150B03500C89C8A /* Page2VC.swift */; };
 		9CA9ADA3206B5891003E0B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9ADA2206B5891003E0B16 /* AppDelegate.swift */; };
 		9CA9ADA5206B5891003E0B16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9ADA4206B5891003E0B16 /* ViewController.swift */; };
 		9CA9ADA8206B5891003E0B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9ADA6206B5891003E0B16 /* Main.storyboard */; };
@@ -19,9 +25,42 @@
 		9CA9ADBB206B7FE2003E0B16 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9ADBA206B7FE2003E0B16 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9C7242512150A09500C89C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA9AD97206B5891003E0B16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C7242462150A09500C89C8A;
+			remoteInfo = ExtensionToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C7242572150A09500C89C8A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9C7242532150A09500C89C8A /* ExtensionToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9B9358832F1077566E7D8360 /* Pods-ExchangeCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeCurrency.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeCurrency/Pods-ExchangeCurrency.release.xcconfig"; sourceTree = "<group>"; };
 		9C0C7481206E1E4B0022D383 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		9C7242472150A09500C89C8A /* ExtensionToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtensionToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7242482150A09500C89C8A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9C72424B2150A09500C89C8A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		9C72424E2150A09500C89C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9C7242502150A09500C89C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C7242582150A98B00C89C8A /* ExchangeCurrency.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExchangeCurrency.entitlements; sourceTree = "<group>"; };
+		9C7242592150AA0F00C89C8A /* ExtensionToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtensionToday.entitlements; sourceTree = "<group>"; };
+		9C72425C2150B01A00C89C8A /* Page2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Page2.storyboard; sourceTree = "<group>"; };
+		9C72425E2150B03500C89C8A /* Page2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2VC.swift; sourceTree = "<group>"; };
 		9CA9AD9F206B5891003E0B16 /* ExchangeCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA9ADA2206B5891003E0B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA9ADA4206B5891003E0B16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +76,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9C7242442150A09500C89C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7242492150A09500C89C8A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CA9AD9C206B5891003E0B16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E78F5510DC439109242A2F27 /* Pods_ExchangeCurrency.framework */,
+				9C7242482150A09500C89C8A /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,10 +121,39 @@
 			path = ViewCell;
 			sourceTree = "<group>";
 		};
+		9C72424A2150A09500C89C8A /* ExtensionToday */ = {
+			isa = PBXGroup;
+			children = (
+				9C7242592150AA0F00C89C8A /* ExtensionToday.entitlements */,
+				9C72424B2150A09500C89C8A /* TodayViewController.swift */,
+				9C72424D2150A09500C89C8A /* MainInterface.storyboard */,
+				9C7242502150A09500C89C8A /* Info.plist */,
+			);
+			path = ExtensionToday;
+			sourceTree = "<group>";
+		};
+		9C72425A2150B00000C89C8A /* Page2 */ = {
+			isa = PBXGroup;
+			children = (
+				9C72425B2150B00D00C89C8A /* VC */,
+				9C72425C2150B01A00C89C8A /* Page2.storyboard */,
+			);
+			path = Page2;
+			sourceTree = "<group>";
+		};
+		9C72425B2150B00D00C89C8A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9C72425E2150B03500C89C8A /* Page2VC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		9CA9AD96206B5891003E0B16 = {
 			isa = PBXGroup;
 			children = (
 				9CA9ADA1206B5891003E0B16 /* ExchangeCurrency */,
+				9C72424A2150A09500C89C8A /* ExtensionToday */,
 				9CA9ADA0206B5891003E0B16 /* Products */,
 				89FCE1270124D6BDE125C395 /* Pods */,
 				2376E533D48F2260873F8D2B /* Frameworks */,
@@ -87,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA9AD9F206B5891003E0B16 /* ExchangeCurrency.app */,
+				9C7242472150A09500C89C8A /* ExtensionToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +172,8 @@
 		9CA9ADA1206B5891003E0B16 /* ExchangeCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				9C72425A2150B00000C89C8A /* Page2 */,
+				9C7242582150A98B00C89C8A /* ExchangeCurrency.entitlements */,
 				9C0C7480206E1E090022D383 /* ViewCell */,
 				9CA9ADB7206B7EC4003E0B16 /* Presenter */,
 				9CA9ADB4206B58DC003E0B16 /* Model */,
@@ -127,6 +207,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9C7242462150A09500C89C8A /* ExtensionToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C7242562150A09500C89C8A /* Build configuration list for PBXNativeTarget "ExtensionToday" */;
+			buildPhases = (
+				9C7242432150A09500C89C8A /* Sources */,
+				9C7242442150A09500C89C8A /* Frameworks */,
+				9C7242452150A09500C89C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtensionToday;
+			productName = ExtensionToday;
+			productReference = 9C7242472150A09500C89C8A /* ExtensionToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9CA9AD9E206B5891003E0B16 /* ExchangeCurrency */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA9ADB1206B5891003E0B16 /* Build configuration list for PBXNativeTarget "ExchangeCurrency" */;
@@ -137,10 +234,12 @@
 				9CA9AD9D206B5891003E0B16 /* Resources */,
 				9F9F8522C9BD8844E6143995 /* [CP] Embed Pods Frameworks */,
 				164FD7CD8675996A1CC2DCB2 /* [CP] Copy Pods Resources */,
+				9C7242572150A09500C89C8A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9C7242522150A09500C89C8A /* PBXTargetDependency */,
 			);
 			name = ExchangeCurrency;
 			productName = ExchangeCurrency;
@@ -153,13 +252,27 @@
 		9CA9AD97206B5891003E0B16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = chayarak;
 				TargetAttributes = {
+					9C7242462150A09500C89C8A = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					9CA9AD9E206B5891003E0B16 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -177,17 +290,27 @@
 			projectRoot = "";
 			targets = (
 				9CA9AD9E206B5891003E0B16 /* ExchangeCurrency */,
+				9C7242462150A09500C89C8A /* ExtensionToday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9C7242452150A09500C89C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C72424F2150A09500C89C8A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CA9AD9D206B5891003E0B16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9CA9ADAD206B5891003E0B16 /* LaunchScreen.storyboard in Resources */,
 				9CA9ADAA206B5891003E0B16 /* Assets.xcassets in Resources */,
+				9C72425D2150B01A00C89C8A /* Page2.storyboard in Resources */,
 				9CA9ADA8206B5891003E0B16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +378,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9C7242432150A09500C89C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C72424C2150A09500C89C8A /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CA9AD9B206B5891003E0B16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,13 +395,30 @@
 				9CA9ADB9206B7EDA003E0B16 /* ModelPresenter.swift in Sources */,
 				9CA9ADA5206B5891003E0B16 /* ViewController.swift in Sources */,
 				9CA9ADA3206B5891003E0B16 /* AppDelegate.swift in Sources */,
+				9C72425F2150B03500C89C8A /* Page2VC.swift in Sources */,
 				9CA9ADB6206B58EB003E0B16 /* ModelResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9C7242522150A09500C89C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C7242462150A09500C89C8A /* ExtensionToday */;
+			targetProxy = 9C7242512150A09500C89C8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		9C72424D2150A09500C89C8A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C72424E2150A09500C89C8A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		9CA9ADA6206B5891003E0B16 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,6 +438,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9C7242542150A09500C89C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = ExtensionToday/ExtensionToday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98SVP6YBGF;
+				INFOPLIST_FILE = ExtensionToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ExchangeCurrency.ExtensionToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C7242552150A09500C89C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = ExtensionToday/ExtensionToday.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98SVP6YBGF;
+				INFOPLIST_FILE = ExtensionToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ExchangeCurrency.ExtensionToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9CA9ADAF206B5891003E0B16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -401,7 +589,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5B4C086623EA1ADC8CB85F9 /* Pods-ExchangeCurrency.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ExchangeCurrency/ExchangeCurrency.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98SVP6YBGF;
@@ -420,7 +610,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B9358832F1077566E7D8360 /* Pods-ExchangeCurrency.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ExchangeCurrency/ExchangeCurrency.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98SVP6YBGF;
@@ -438,6 +630,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9C7242562150A09500C89C8A /* Build configuration list for PBXNativeTarget "ExtensionToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7242542150A09500C89C8A /* Debug */,
+				9C7242552150A09500C89C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CA9AD9A206B5891003E0B16 /* Build configuration list for PBXProject "ExchangeCurrency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
